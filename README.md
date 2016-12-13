@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # .NET Core Buildpack with Heroku Support 
 ## (Heroku Button with ASP.NET Core MVC Sample)
 
@@ -71,3 +72,6 @@ You can deploy this ASP.Net MVC website on Heroku server by clicking below butto
 *   [Publish to Microsoft Azure Web Apps](https://go.microsoft.com/fwlink/?LinkID=398609)
 
 We would love to hear your [feedback](https://go.microsoft.com/fwlink/?LinkId=518015)
+=======
+# zolutia-test
+>>>>>>> 6d77a7c726852b2c8c18f6a6583ac9d7dd964226
