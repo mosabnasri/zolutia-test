@@ -20,7 +20,7 @@ namespace WebApplication.Models.DataBase
 
                     //var connString = "Server=192.168.99.100;User Id=pipeline;Password=pipeline;Database=pipeline";
                     //var conn = new NpgsqlConnection { ConnectionString = connString };
-                    cnn.Open();
+                    //cnn.Open();
                     var sql = "SELECT COUNT(*) FROM Day";
                     var cmd = cnn.CreateCommand();
                     cmd.CommandText = sql;
