@@ -18,7 +18,7 @@ namespace WebApplication.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            //NpgsqlConnection a = 
+            Models.DataBase.Day.Access.Count();
 
             return View();
         }
