@@ -11,7 +11,7 @@ namespace WebApplication.Models.DataBase
     {
         public class Access
         {
-            public static int Count()
+            public static string Count()
             {
                 try
                 {
@@ -24,10 +24,10 @@ namespace WebApplication.Models.DataBase
                     var sql = "SELECT COUNT(*) FROM Day";
                     var cmd = cnn.CreateCommand();
                     cmd.CommandText = sql;
-                    var count = cmd.ExecuteScalar();
+                    var count = cmd.ExecuteScalar().ToString();
                     cnn.Close();
 
-                    return (int)count;
+                    return count;
                 }
                 catch (Exception E)
                 {

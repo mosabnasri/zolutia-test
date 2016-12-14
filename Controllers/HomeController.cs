@@ -20,7 +20,7 @@ namespace WebApplication.Controllers
 
             try
             {
-                int count_days = Models.DataBase.Day.Access.Count();
+                var count_days = Models.DataBase.Day.Access.Count();
 
                 ViewData["Count_Days"] = count_days;
             }
