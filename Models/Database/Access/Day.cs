@@ -29,17 +29,9 @@ namespace WebApplication.Models.DataBase
 
                     return (int)count;
                 }
-                catch (Exception Ex)
+                catch (Exception E)
                 {
-                    if (OH.Models.DataBase.Config.GetDebugMode())
-                    {
-                        throw;
-                    }
-                    else
-                    {
-                        OH.Models.DataBase.Helpers.BugReport(Ex);
-                    }
-                    return -1;
+                    throw E;
                 }
             }
 
