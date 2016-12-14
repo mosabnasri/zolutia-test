@@ -18,7 +18,9 @@ namespace WebApplication.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            Models.DataBase.Day.Access.Count();
+            int count_days = Models.DataBase.Day.Access.Count();
+
+            ViewData["Count_Days"] = count_days;
 
             return View();
         }
