@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Npgsql;
 
 namespace WebApplication.Controllers
 {
@@ -16,6 +17,8 @@ namespace WebApplication.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+
+            //NpgsqlConnection a = 
 
             return View();
         }
